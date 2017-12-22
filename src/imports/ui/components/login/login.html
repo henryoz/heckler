@@ -1,0 +1,12 @@
+<template name="login">
+    {{#unless audienceMemberLoggedIn}}
+    <input type="text" placeholder="What's your name?">
+    <button>Go!</button>
+    {{else}}
+        <a href="#" id="leave">Leave</a>
+    {{/unless}}
+
+    {{#unless cookiesEnabled}}
+        <h3>Please enable cookies to enjoy this experience.</h3>
+    {{/unless}}
+</template>
